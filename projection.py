@@ -83,9 +83,9 @@ class Camera:
                 elif(event.key == K_DOWN):
                     self.xrot -= 1
                 elif(event.key == K_SPACE):
-                    self.location = (self.location[X],self.location[Y]-0.1,self.location[Z])
-                elif(event.key == K_z):
                     self.location = (self.location[X],self.location[Y]+0.1,self.location[Z])
+                elif(event.key == K_z):
+                    self.location = (self.location[X],self.location[Y]-0.1,self.location[Z])
                 elif(event.key == K_w):
                     self.location = (self.location[X]+dx,self.location[Y],self.location[Z]+dz)
                 elif(event.key == K_a):
